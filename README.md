@@ -1,7 +1,7 @@
 # Neural network for segmentation of lumen and other phenotypes of neural precursors on micropatterns
 <img src='pics/im0.png' align="center" width=300/>
 <br>
-This code is a pytorch implementation of a convolutional DenseNet for semantic segmentation by [Jegou et al](https://arxiv.org/abs/1611.09326). The architecture is useful for training a segmentation network from scratch and can easily be adapted to work with different numbers of channels (here we use one channel in contrast to the more typical segmentation of 3-channel RGB images, but the code can work with any number of channels).
+This code is a pytorch implementation of a convolutional DenseNet for semantic segmentation by Jegou et al, https://arxiv.org/abs/1611.09326. The architecture is useful for training a segmentation network from scratch and can easily be adapted to work with different numbers of channels (here we use one channel in contrast to the more typical segmentation of 3-channel RGB images, but the code can work with any number of channels).
 
 The network uses Adam optimization (learning rate of 0.0001 is a good value, but optimal learning rate may differ depending on the problem) and customizable data augmentation based on the [imgaug](https://github.com/aleju/imgaug) library.
 
