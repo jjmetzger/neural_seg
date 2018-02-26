@@ -16,7 +16,7 @@ The network uses Adam optimization (learning rate of 0.0001 is a good value, but
 
 ## Usage
 
-* Prepare images and corresponding ground truth as .tif and _Labels.tif files, e.g. im1.tif and im1_Labels.tif. This naming convention is the default output of [Ilastik](ilastik.org) which we use to annotate data (note: Ilastik is used only as an annotation tool here, i.e. Ilastik's training features are not used, and any other software can be used to generate the training data). Put the data in a directory called 'train'.
+* Prepare images and corresponding ground truth as .tif and _Labels.tif files, e.g. im1.tif and im1_Labels.tif. This naming convention is the default output of [Ilastik](http://ilastik.org) which we use to annotate data (note: Ilastik is used only as an annotation tool here, i.e. Ilastik's training features are not used, and any other software can be used to generate the training data). Put the data in a directory called 'train'.
 
 * Train network using run_dense_lumen.run(base_dir), where base_dir is the directory that contains the 'train' directory with the annotated training data. Example of how to train and save a network are given in train_net.ipynb.
 
